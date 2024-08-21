@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-hrmPO4HCmSpvwyuLWHX5z5xXkz8TjJU5pXcFpFQwqfOeG8Bl/5+PtcO87NNb5O4" crossorigin="anonymous">
+    <link rel="stylesheet" href="settings.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <img src="/system/images/laundry_logo.png" alt="Laundry logo">
+                <span>Azia Skye's Laundry</span>
+            </div>
+            <i class='bx bx-menu' id="btnMenu"></i>
+        </div>
+
+        <div class="user">
+            <img src="/system/images/laundry_logo.png" alt="Profile" class="user-image">
+            <div>
+                <p class="bold">Doris</p>
+                <p>Admin</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>
+                <a href="/system/dashboard/dashboard.html">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+
+            <li>
+                <a href="/system/my profile/profile.html">
+                    <i class='bx bxs-user'></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+
+            <li>
+                <a href="/system/users/users.html">
+                    <i class='bx bxs-group'></i>
+                    <span class="nav-item">Users</span>
+                </a>
+                <span class="tooltip">Users</span>
+            </li>
+
+            <li>
+                <a href="/system/records/records.html">
+                    <i class='bx bxs-folder-open'></i>
+                    <span class="nav-item">Records</span>
+                </a>
+                <span class="tooltip">Records</span>
+            </li>
+
+            <li>
+                <a href="/system/transaction/transaction.html">
+                    <i class='bx bx-transfer-alt'></i>
+                    <span class="nav-item">Transaction</span>
+                </a>
+                <span class="tooltip">Transaction</span>
+            </li>
+
+            <li>
+                <a href="/system/sales report/report.html">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="nav-item">Report</span>
+                </a>
+                <span class="tooltip">Report</span>
+            </li>
+
+            <li>
+                <a href="/system/settings/settings.html">
+                    <i class='bx bxs-cog'></i>
+                    <span class="nav-item">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+            </li>
+
+            <li>
+                <a href="/system/archive/archive.html">
+                    <i class='bx bxs-archive-in'></i>
+                    <span class="nav-item">Archived</span>
+                </a>
+                <span class="tooltip">Archived</span>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class='bx bx-log-out'></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Settings</h1>
+            <button type="button" class="btn-primary">Change the price per category</button>
+            <div class="info-box-container">
+            <form id="update-form" class="info-box1">
+                <h2>Wash/Dry/Fold</h2>
+                <p>Clothes <input type="text" id="myTextbox1" name="myTextbox1" placeholder="35"></p>
+                <p>Table napkin</p>
+                <p>Pillowcase</p>
+                <p>Bedsheets <input type="text" id="myTextbox2" name="myTextbox2" placeholder="55"></p>
+                <p>Table Cloths</p>
+                <p>Curtain</p>
+                <p>Comforter <input type="text" id="myTextbox3" name="myTextbox3" placeholder="65"></p>
+                <button type="submit" class="btn-save" name="save_button">SAVE</button>
+            </form>
+              <form class="info-box2">
+                <h2>Wash/Dry/Press</h2>
+                <p>Clothes <input type="text" id="myTextbox4" name="myTextbox4" placeholder="35"></p>
+                <p>Table napkin</p>
+                <p>Pillowcase</p>
+                <p>Bedsheets <input type="text" id="myTextbox5" name="myTextbox5" placeholder="55"></p>
+                <p>Table Cloths</p>
+                <p>Curtain</p>
+                <button type="submit" class="btn-save1">SAVE</button>
+              </form>
+              <form class="info-box3">
+                <h2>Dry only</h2>
+                <p>Clothes <input type="text" id="myTextbox6" name="myTextbox6" placeholder="65"></p>
+                <p>Table napkin</p>
+                <p>Pillowcase</p>
+                <p>Bedsheets <input type="text" id="myTextbox7" name="myTextbox7" placeholder="55"></p>
+                <p>Table Cloths</p>
+                <p>Curtain</p>
+                <p>Comforter <input type="text" id="myTextbox8" name="myTextbox8" placeholder="65"></p>
+                <button type="submit" class="btn-save">SAVE</button>
+              </form>
+              <form class="text-beside">
+                <h3>Minimum Kilos: <input type="text" id="myTextbox9" name="myTextbox9" placeholder="5 kg"></h3>
+                <h3>Delivery Date: <input type="text" id="myTextbox10" name="myTextbox10" placeholder="3 Days"></h3>
+                <h3>Delivery Charge: <input type="text" id="myTextbox11" name="myTextbox11" placeholder="50PHP"></h3>
+                <h3>Pickup Charge: <input type="text" id="myTextbox12" name="myTextbox12" placeholder="20PHP"></h3>
+              </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript" src="settings.js"></script>
+
+</html>
